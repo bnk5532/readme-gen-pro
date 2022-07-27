@@ -20,37 +20,66 @@ var badgeKey =
 inquirer.prompt([
     {
         type: "input",
-        name: "name",
-        message: "What is your name?",
-    },
-    {
-        type: "checkbox",
-        message: "What languages?",
-        name: "stack",
-        choices: ["HTML", "CSS", "JavaScript"],
+        name: "project title",
+        message: "What is your project title?",
     },
     {
         type: "list",
-        message: "How do you want to be contacted?",
-        name: "contact",
-        choices: ["Phone", "Email", "Text"],
+        message: "License?",
+        name: "License Type",
+        choices: ["MIT", "IBM", "Apache 2.0", "Boost", "WTFPL"],
+    },
+    {
+        type: "input",
+        message: "Description?",
+        name: "Description",
+    },
+    {
+        type: "input",
+        message: "Installation instructions?",
+        name: "Installation",
+    },
+    {
+        type: "input",
+        message: "Usage?",
+        name: "Usage",
+    },
+    {
+        type: "input",
+        message: "Contributors?",
+        name: "Contributing",
+    },
+    {
+        type: "input",
+        message: "Tests?",
+        name: "Tests",
     }
+    
 ])
 
 .then((answers) => {
     console.log(answers);
-    const fileName = `${answers.name.toLowerCase().split(' ').join('')}.json`;
+    // const fileName = `${answers.name.toLowerCase().split(' ').join('')}.json`;
     
     // const A = `#Purpose ${answers.purpose} ##Description ${answers.description}`;
-    // const D = `
-    //     #Purpose
-    //     ${answers.purpose}
-    //     ##Description
-    //     ${answers.description}
-    // `
+    const addToFile = `
+        #Title
+        ${answers.title}
+        ##Description
+        ${answers.description}
+        ##Installation Instructions
+        ${answers.installation}
+        ##Usage
+        ${answers.usage}
+        ##Contributing
+        ${answers.contributing}
+        ##Tests
+        ${answers.tests}
+    `
 
-       // fs.writeFile(README.md, D);
-       fs.writeFile(fileName, JSON.stringify(answers, null, '\t'), err => 
-       err ? console.log(err) : console.log("Success!")
-   );
+       fs.writeFile(README.md, addToFile(answers, null, '\t'), err => 
+       err ? console.log(err) : console.log("Success!"));
+//        fs.writeFile(fileName, JSON.stringify(answers, null, '\t'), err => 
+//        err ? console.log(err) : console.log("Success!")
+//    );
 });
