@@ -14,7 +14,6 @@ init();
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-var badgeKey = 
 
 
 inquirer.prompt([
@@ -59,10 +58,8 @@ inquirer.prompt([
 
 .then((answers) => {
     console.log(answers);
-    // const fileName = `${answers.name.toLowerCase().split(' ').join('')}.json`;
     
-    // const A = `#Purpose ${answers.purpose} ##Description ${answers.description}`;
-    const addToFile = `
+    const dataCollect = `
         #Title
         ${answers.title}
         ##Description
@@ -77,9 +74,6 @@ inquirer.prompt([
         ${answers.tests}
     `
 
-       fs.writeFile(README.md, addToFile(answers, null, '\t'), err => 
+       fs.writeFile(README.md, dataCollect(answers, null, '\t'), err => 
        err ? console.log(err) : console.log("Success!"));
-//        fs.writeFile(fileName, JSON.stringify(answers, null, '\t'), err => 
-//        err ? console.log(err) : console.log("Success!")
-//    );
 });
