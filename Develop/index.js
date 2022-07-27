@@ -14,66 +14,50 @@ init();
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 inquirer.prompt([
     {
         type: "input",
-        name: "project title",
+        name: "title",
         message: "What is your project title?",
     },
     {
         type: "list",
         message: "License?",
-        name: "License Type",
+        name: "license",
         choices: ["MIT", "IBM", "Apache 2.0", "Boost", "WTFPL"],
     },
     {
         type: "input",
         message: "Description?",
-        name: "Description",
+        name: "description",
     },
     {
         type: "input",
         message: "Installation instructions?",
-        name: "Installation",
+        name: "installation",
     },
     {
         type: "input",
         message: "Usage?",
-        name: "Usage",
+        name: "usage",
     },
     {
         type: "input",
         message: "Contributors?",
-        name: "Contributing",
+        name: "contributing",
     },
     {
         type: "input",
         message: "Tests?",
-        name: "Tests",
+        name: "tests",
     }
     
 ])
 
 .then((answers) => {
-    console.log(answers);
-    
-    const dataCollect = `
-        #Title
-        ${answers.title}
-        ##Description
-        ${answers.description}
-        ##Installation Instructions
-        ${answers.installation}
-        ##Usage
-        ${answers.usage}
-        ##Contributing
-        ${answers.contributing}
-        ##Tests
-        ${answers.tests}
-    `
-
-       fs.writeFile(README.md, dataCollect(answers, null, '\t'), err => 
+       fs.writeFile('README.md', generateMarkdown(answers), err => 
        err ? console.log(err) : console.log("Success!"));
 });
