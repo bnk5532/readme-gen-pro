@@ -16,7 +16,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-
+//questions
 inquirer.prompt([
     {
         type: "input",
@@ -56,7 +56,7 @@ inquirer.prompt([
     }
     
 ])
-
+//writes or overwrites inquirer answers to new readme file. 
 .then((answers) => {
        fs.writeFile('README.md', generateMarkdown(answers), err => 
        err ? console.log(err) : console.log("Success!"));
