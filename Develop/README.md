@@ -1,20 +1,20 @@
 
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) 
-  # README Test 
+  ![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg) 
+  # TEST README
   ## Table of Contents
-  * Description
-  * Installation Instructions
-  * Usage
-  * Contributing
-  * Tests
+  * [Description](#description)  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
   ## Description
-  An app to generate quality readme.md files from the command line.
+  Test
   ## Installation Instructions
-  Inquirer required.
+  none
   ## Usage
-  For anyone that would like to try it!
+  Anyone
   ## Contributing
-  Brian King
+  Brian
   ## Tests
   n/a
   

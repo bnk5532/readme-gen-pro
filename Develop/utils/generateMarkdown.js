@@ -39,11 +39,11 @@ function generateMarkdown(answers) {
   ${renderLicenseSection(answers.license)}
   # ${answers.title}
   ## Table of Contents
-  * Description
-  * Installation Instructions
-  * Usage
-  * Contributing
-  * Tests
+  * [Description](#description)  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
   ## Description
   ${answers.description}
   ## Installation Instructions
