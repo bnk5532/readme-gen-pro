@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
       return "![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)";
       break;
     default:
-      return "No License selected";
+      return "No License";
       break;
   }
 }

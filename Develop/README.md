@@ -1,6 +1,6 @@
 
-  ![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg) 
-  # README Test Doc
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) 
+  # README Test 
   ## Table of Contents
   * Description
   * Installation Instructions
@@ -8,11 +8,11 @@
   * Contributing
   * Tests
   ## Description
-  App to create quality readme filese from the command line
+  An app to generate quality readme.md files from the command line.
   ## Installation Instructions
-  none
+  Inquirer required.
   ## Usage
-  For anyone that would like to try it out.
+  For anyone that would like to try it!
   ## Contributing
   Brian King
   ## Tests

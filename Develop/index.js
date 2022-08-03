@@ -13,7 +13,7 @@ inquirer.prompt([
         type: "list",
         message: "License?",
         name: "license",
-        choices: ["MIT", "IBM", "Apache 2.0", "Boost", "WTFPL"],
+        choices: ["MIT", "IBM", "Apache 2.0", "Boost", "WTFPL", "No License"],
     },
     {
         type: "input",
