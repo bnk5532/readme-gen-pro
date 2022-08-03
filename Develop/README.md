@@ -1,6 +1,6 @@
 
-  ![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg) 
-  # TEST README
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) 
+  # README Pro Gen
   ## Table of Contents
   * [Description](#description)  
   * [Installation](#installation)
@@ -8,13 +8,13 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   ## Description
-  Test
+  A command line app to generate quality professional readme files.
   ## Installation Instructions
-  none
+  Inquirer needed.
   ## Usage
-  Anyone
+  Open
   ## Contributing
-  Brian
+  Brian King
   ## Tests
   n/a
   
