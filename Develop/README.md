@@ -1,6 +1,6 @@
 
-  ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg) 
-  # Web Dev
+  ![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg) 
+  # README Test Doc
   ## Table of Contents
   * Description
   * Installation Instructions
@@ -8,15 +8,15 @@
   * Contributing
   * Tests
   ## Description
-  sa;dkfljds;klafj
+  App to create quality readme filese from the command line
   ## Installation Instructions
-  as;kdfjadsk;fj;ads
+  none
   ## Usage
-  a;ksdfj;akdslfj
+  For anyone that would like to try it out.
   ## Contributing
-  ;alksdfj;akdsfd
+  Brian King
   ## Tests
-  asdf
+  n/a
   
 
 
