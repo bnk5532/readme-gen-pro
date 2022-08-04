@@ -8,7 +8,7 @@ A command line application to generate progressional quality README.md files usi
 
 ## Video Demo
 
-https://watch.screencastify.com/v/NrsuTCujr4cFuYD024aK
+[Click here for video demo!](https://watch.screencastify.com/v/NrsuTCujr4cFuYD024aK)
 
 ## Contributors
 Brian King
