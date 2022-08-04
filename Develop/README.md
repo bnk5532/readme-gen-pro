@@ -1,6 +1,6 @@
 
   ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) 
-  # README Pro Gen
+  # WebDev README Pro
   ## Table of Contents
   * [Description](#description)  
   * [Installation](#installation)
@@ -8,11 +8,11 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   ## Description
-  A command line app to generate quality professional readme files.
+  An app to generate quality readme.md files from the command line.
   ## Installation Instructions
-  Inquirer needed.
+  Inquirer required.
   ## Usage
-  Open
+  Open to anyone that would like to use it!
   ## Contributing
   Brian King
   ## Tests
