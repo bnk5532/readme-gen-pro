@@ -32,6 +32,20 @@ inquirer.prompt([
     },
     {
         type: "input",
+        message: "Github?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "email?",
+        name: "email",
+        validate: function(email)
+        {
+            return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+        }
+    },
+    {
+        type: "input",
         message: "Contributors?",
         name: "contributing",
     },

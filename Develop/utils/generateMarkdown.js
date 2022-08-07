@@ -42,6 +42,8 @@ function generateMarkdown(answers) {
   * [Description](#description)  
   * [Installation](#installation)
   * [Usage](#usage)
+  * [GitHub](#github)
+  * [Email](#email)
   * [Contributing](#contributing)
   * [Tests](#tests)
   ## Description
@@ -50,6 +52,10 @@ function generateMarkdown(answers) {
   ${answers.installation}
   ## Usage
   ${answers.usage}
+  ## GitHub
+  ${answers.github}
+  ## Email
+  ${answers.email}
   ## Contributing
   ${answers.contributing}
   ## Tests
