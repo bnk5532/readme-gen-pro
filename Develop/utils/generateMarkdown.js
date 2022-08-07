@@ -60,9 +60,6 @@ function generateMarkdown(answers) {
   ${answers.contributing}
   ## Tests
   ${answers.tests}
-  
-
-
 `;
 }
 
