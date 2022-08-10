@@ -1,7 +1,7 @@
 # readme-gen-pro
 
 ## Description
-A command line application to generate progressional quality README.md files using NPM Inquirer prompts.
+A command line application to generate professional quality README.md files using NPM Inquirer prompts.
 
 ## Languages
 * JavaScript
